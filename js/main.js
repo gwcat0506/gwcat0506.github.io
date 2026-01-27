@@ -19,9 +19,15 @@
 
 	var fullHeight = function() {
 
-		$('.js-fullheight').css('height', $(window).height());
+		// Reduce "full screen" feel on the hero for better readability.
+		// Keep a minimum height so content doesn't feel cramped on small screens.
+		var h = $(window).height();
+		var target = Math.max(520, Math.round(h * 0.78));
+		$('.js-fullheight').css('height', target);
 		$(window).resize(function(){
-			$('.js-fullheight').css('height', $(window).height());
+			var h = $(window).height();
+			var target = Math.max(520, Math.round(h * 0.78));
+			$('.js-fullheight').css('height', target);
 		});
 
 	};
