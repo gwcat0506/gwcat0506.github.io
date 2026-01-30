@@ -9994,10 +9994,13 @@ a.text-primary:focus {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
+/* Hide chapter icons (were showing as purple "?" when icon font failed) */
 .resume-wrap .icon {
-  background: linear-gradient(135deg, var(--theme-primary) 0%, #A78BFA 100%);
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(109, 40, 217, 0.25);
+  display: none;
+}
+
+.resume-wrap .text {
+  width: 100%;
 }
 
 .resume-wrap .text h2 {
