@@ -9944,6 +9944,14 @@ a.text-primary:focus {
   overflow: hidden;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
   border: 1px solid #E2E8F0;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.ftco-about .img-about .img {
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
 }
 
 .ftco-about .heading-section h1.big {
