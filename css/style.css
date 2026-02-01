@@ -9929,6 +9929,10 @@ a.text-primary:focus {
   position: relative;
 }
 
+#about-section .row.no-gutters {
+  padding-top: 1.5rem;
+}
+
 .ftco-about::before {
   content: '';
   position: absolute;
@@ -9937,6 +9941,11 @@ a.text-primary:focus {
   right: 0;
   height: 1px;
   background: linear-gradient(to right, transparent, #E2E8F0, transparent);
+}
+
+/* About: 사진과 About Me 가로 중앙 정렬 */
+.ftco-about .row.no-gutters {
+  align-items: center;
 }
 
 .ftco-about .img-about {
@@ -10027,6 +10036,140 @@ a.text-primary:focus {
   color: #64748B;
   font-weight: 500;
   font-size: 0.95rem;
+}
+
+/* Research & Projects: Publications, Software Copyright, Research Projects - black, large (no purple) */
+#page-4 .resume-wrap .date,
+#page-4 .resume-wrap .text h2 {
+  color: #0F172A !important;
+  font-weight: 700;
+}
+
+#page-4 .resume-wrap .text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+#page-4 .resume-wrap .date {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Skills - 카테고리별 태그 형식 */
+.skills-tags-wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid #E2E8F0;
+}
+
+.skills-tags-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #E2E8F0;
+  flex-wrap: wrap;
+}
+
+.skills-tags-row:last-child {
+  border-bottom: none;
+}
+
+.skills-tags-row:nth-child(odd) {
+  background: #F8FAFC;
+}
+
+.skills-tags-cat {
+  font-weight: 600;
+  color: #0F172A;
+  min-width: 110px;
+  font-size: 0.95rem;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.875rem;
+  color: #475569;
+  background: #fff;
+  border: 1px solid #E2E8F0;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+  border-color: var(--theme-primary);
+  color: var(--theme-primary);
+}
+
+/* Research & Projects: 모든 본문 회색 (position과 동일) */
+#page-4 .resume-wrap .text > div,
+#page-4 .resume-wrap .text > div div,
+#page-4 .resume-wrap .text .position {
+  color: #64748B;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* Research Projects: 구조화된 리스트 */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.85rem 1rem;
+  background: #F8FAFC;
+  border-radius: 10px;
+  border-left: 3px solid var(--theme-primary);
+}
+
+.project-meta {
+  font-size: 0.8rem;
+  color: #94A3B8;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.project-authors {
+  font-size: 0.85rem;
+  color: #64748B;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.15rem;
+}
+
+.author-me {
+  text-decoration: underline;
+}
+
+.project-title {
+  color: #475569;
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.project-tags {
+  font-size: 0.85rem;
+  color: #94A3B8;
+  font-weight: 500;
 }
 
 /* Skills cards */
@@ -10127,5 +10270,14 @@ a.text-primary:focus {
 
 .contact-item a:hover {
   color: var(--theme-primary);
+}
+
+/* Contact: 박스를 제목에 가깝게 배치 */
+#contact-section .heading-section {
+  margin-bottom: 0.5rem !important;
+}
+
+#contact-section .contact-box-row {
+  margin-top: 0.5rem;
 }
 
