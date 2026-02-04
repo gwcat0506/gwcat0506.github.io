@@ -9976,6 +9976,27 @@ a.text-primary:focus {
   font-size: 2.25rem;
 }
 
+.about-intro {
+  margin-bottom: 0;
+}
+
+.about-intro-lead {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: #334155;
+}
+
+.about-intro-detail {
+  margin-bottom: 0;
+  padding: 1rem 1.25rem;
+  background: #F8FAFC;
+  border-radius: 10px;
+  border-left: 4px solid var(--theme-primary);
+  line-height: 1.7;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
 .ftco-about ul.about-info li {
   padding: 0.75rem 0;
   border-bottom: 1px solid #F1F5F9;
@@ -10113,6 +10134,7 @@ a.text-primary:focus {
   border-color: var(--theme-primary);
   color: var(--theme-primary);
 }
+
 
 /* Research & Projects: 모든 본문 회색 (position과 동일) */
 #page-4 .resume-wrap .text > div,
