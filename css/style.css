@@ -9981,20 +9981,9 @@ a.text-primary:focus {
 }
 
 .about-intro-lead {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   line-height: 1.7;
   color: #334155;
-}
-
-.about-intro-detail {
-  margin-bottom: 0;
-  padding: 1rem 1.25rem;
-  background: #F8FAFC;
-  border-radius: 10px;
-  border-left: 4px solid var(--theme-primary);
-  line-height: 1.7;
-  color: #475569;
-  font-size: 0.95rem;
 }
 
 .ftco-about ul.about-info li {
