@@ -7,30 +7,29 @@
 
 	"use strict";
 
-	$(window).stellar({
-    responsive: true,
-    parallaxBackgrounds: true,
-    parallaxElements: true,
-    horizontalScrolling: false,
-    hideDistantElements: false,
-    scrollProperty: 'scroll'
-  });
+	// Stellar 비활성화: 스크롤 시 자동으로 위로 올라가는 현상 방지 (패럴랙스가 스크롤 위치를 건드림)
+	// $(window).stellar({
+	//   responsive: true,
+	//   parallaxBackgrounds: true,
+	//   parallaxElements: true,
+	//   horizontalScrolling: false,
+	//   hideDistantElements: false,
+	//   scrollProperty: 'scroll'
+	// });
 
 
 	var fullHeight = function() {
 
 		// Reduce "full screen" feel on the hero for better readability.
 		// Keep a minimum height so content doesn't feel cramped on small screens.
+		// resize에서 제거: 모바일에서 주소창 숨김/표시 시 resize가 연달아 발생해
+		// 히어로 높이가 바뀌며 문서 높이가 달라져 스크롤이 자동으로 위로 올라가는 현상 방지
 		var h = $(window).height();
 		var target = Math.max(520, Math.round(h * 0.78));
 		$('.js-fullheight').css('height', target);
-		$(window).resize(function(){
-			var h = $(window).height();
-			var target = Math.max(520, Math.round(h * 0.78));
-			$('.js-fullheight').css('height', target);
-		});
-
+		// $(window).resize(function(){ ... }); 제거
 	};
+
 	fullHeight();
 
 	// loader
@@ -43,8 +42,8 @@
 	};
 	loader();
 
-	// Scrollax
-   $.Scrollax();
+	// Scrollax 비활성화: 스크롤 시 자동으로 위로 올라가는 현상 방지
+	// $.Scrollax();
 
 
 
