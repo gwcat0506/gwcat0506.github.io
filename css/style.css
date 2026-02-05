@@ -9697,6 +9697,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* 모바일에서도 PC와 동일한 레이아웃 유지 (가로 스크롤) */
+body {
+  min-width: 1200px;
+  overflow-x: auto;
+}
+
 a,
 .text-primary {
   color: var(--theme-primary) !important;
