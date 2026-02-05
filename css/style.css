@@ -9104,6 +9104,11 @@ textarea.form-control {
       border: 2px solid #fff !important; }
   .ftco-footer p {
     color: rgba(255, 255, 255, 0.7); }
+  .ftco-footer .footer-copyright,
+  .ftco-footer .footer-copyright a {
+    color: var(--theme-primary) !important; }
+  .ftco-footer .footer-copyright a:hover {
+    color: var(--theme-primary-hover) !important; }
   .ftco-footer a {
     color: rgba(255, 255, 255, 0.7); }
     .ftco-footer a:hover {
@@ -9933,10 +9938,11 @@ a.text-primary:focus {
 .ftco-about {
   background: linear-gradient(to bottom, #FFFFFF 0%, #F8FAFC 100%);
   position: relative;
+  padding-top: rem;
 }
 
 #about-section .row.no-gutters {
-  padding-top: 1.5rem;
+  padding-top: 4.5rem;
 }
 
 .ftco-about::before {
@@ -10010,6 +10016,19 @@ a.text-primary:focus {
 .ftco-about ul.about-info li span:last-child {
   color: #0F172A;
   font-weight: 500;
+}
+
+/* About Me: CV · Blog 버튼 */
+.ftco-about .about-cta {
+  border-top: 1px solid #F1F5F9;
+}
+.ftco-about .about-cta .btn {
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+.ftco-about .about-cta .btn + .btn {
+  margin-left: 0.5rem;
 }
 
 /* Modern card improvements */
@@ -10264,6 +10283,11 @@ a.text-primary:focus {
   border-color: var(--theme-primary);
 }
 
+/* Contact Me 섹션과 푸터 사이 여백 */
+#contact-section.contact-section {
+  padding-bottom: 4rem;
+}
+
 .contact-item {
   padding: 1.25rem 0;
   border-bottom: 1px solid #E2E8F0;
@@ -10296,5 +10320,6 @@ a.text-primary:focus {
 
 #contact-section .contact-box-row {
   margin-top: 0.5rem;
+  margin-bottom: 3rem;
 }
 
